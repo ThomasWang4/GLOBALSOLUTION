@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Quiz sobre enchentes e tecnologia" />
+  <title>AquaSafe — Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar container" aria-label="Menu principal">
+      <div class="logo">🌊 AquaSafe</div>
+      <button class="menu-toggle" aria-label="Alternar Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Problema</a></li>
+        <li><a href="tecnologias.html">Tecnologias</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="publico.html">Público-Alvo</a></li>
+        <li><a href="beneficios.html">Benefícios</a></li>
+        <li><a href="uso.html">Uso Diário</a></li>
+        <li><a href="slideshow.html">SlideShow</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="form.html">Formulário</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <h1>Quiz Interativo</h1>
+    <p>Responda às 10 perguntas e descubra seu nível de conhecimento sobre enchentes e tecnologia!</p>
+
+    <form id="quiz-form">
+      <div class="question">
+        <p>1️⃣ Qual é a principal causa das enchentes urbanas?</p>
+        <label><input type="radio" name="q1" value="A"> A) Chuvas intensas</label>
+        <label><input type="radio" name="q1" value="B"> B) Má gestão de drenagem</label>
+        <label><input type="radio" name="q1" value="C"> C) Desmatamento</label>
+      </div>
+
+      <div class="question">
+        <p>2️⃣ Como a tecnologia pode ajudar na prevenção de enchentes?</p>
+        <label><input type="radio" name="q2" value="A"> A) Sensores de monitoramento</label>
+        <label><input type="radio" name="q2" value="B"> B) Alertas via aplicativo</label>
+        <label><input type="radio" name="q2" value="C"> C) Sistemas de escoamento inteligentes</label>
+      </div>
+
+      <div class="question">
+        <p>3️⃣ Qual fator ambiental pode agravar enchentes?</p>
+        <label><input type="radio" name="q3" value="A"> A) Poluição dos rios</label>
+        <label><input type="radio" name="q3" value="B"> B) Desmatamento</label>
+        <label><input type="radio" name="q3" value="C"> C) Uso excessivo de concreto</label>
+      </div>
+
+      <div class="question">
+        <p>4️⃣ Qual órgão geralmente monitora riscos de enchentes?</p>
+        <label><input type="radio" name="q4" value="A"> A) Defesa Civil</label>
+        <label><input type="radio" name="q4" value="B"> B) Polícia Ambiental</label>
+        <label><input type="radio" name="q4" value="C"> C) Corpo de Bombeiros</label>
+      </div>
+
+      <div class="question">
+        <p>5️⃣ Qual destas soluções pode reduzir enchentes em áreas urbanas?</p>
+        <label><input type="radio" name="q5" value="A"> A) Construção de barragens</label>
+        <label><input type="radio" name="q5" value="B"> B) Melhor sistema de drenagem</label>
+        <label><input type="radio" name="q5" value="C"> C) Plantação de árvores</label>
+      </div>
+
+      <div class="question">
+        <p>6️⃣ Quais impactos sociais as enchentes podem causar?</p>
+        <label><input type="radio" name="q6" value="A"> A) Deslocamento de famílias</label>
+        <label><input type="radio" name="q6" value="B"> B) Perda de bens</label>
+        <label><input type="radio" name="q6" value="C"> C) Todas as alternativas</label>
+      </div>
+
+      <div class="question">
+        <p>7️⃣ Como os aplicativos podem ajudar na prevenção?</p>
+        <label><input type="radio" name="q7" value="A"> A) Enviar alertas em tempo real</label>
+        <label><input type="radio" name="q7" value="B"> B) Prever chuvas a longo prazo</label>
+        <label><input type="radio" name="q7" value="C"> C) Controlar o volume dos rios</label>
+      </div>
+
+      <div class="question">
+        <p>8️⃣ O que é um plano de contingência?</p>
+        <label><input type="radio" name="q8" value="A"> A) Medidas para lidar com emergências</label>
+        <label><input type="radio" name="q8" value="B"> B) Estudo sobre desastres naturais</label>
+        <label><input type="radio" name="q8" value="C"> C) Registros históricos de enchentes</label>
+      </div>
+
+      <div class="question">
+        <p>9️⃣ Qual destes materiais pode ser usado para absorver água na cidade?</p>
+        <label><input type="radio" name="q9" value="A"> A) Asfalto comum</label>
+        <label><input type="radio" name="q9" value="B"> B) Pavimento permeável</label>
+        <label><input type="radio" name="q9" value="C"> C) Concreto reforçado</label>
+      </div>
+
+      <div class="question">
+        <p>🔟 Como a população pode ajudar a prevenir enchentes?</p>
+        <label><input type="radio" name="q10" value="A"> A) Evitar o descarte irregular de lixo</label>
+        <label><input type="radio" name="q10" value="B"> B) Monitorar alertas meteorológicos</label>
+        <label><input type="radio" name="q10" value="C"> C) Todas as alternativas</label>
+      </div>
+
+      <button type="submit">Ver Resultado</button>
+    </form>
+
+    <div id="result" class="hidden"></div>
+  </main>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
