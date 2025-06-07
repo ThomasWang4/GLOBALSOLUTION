@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SlideShow sobre enchentes e tecnologia">
+  <title>AquaSafe — SlideShow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar container" aria-label="Menu principal">
+      <div class="logo">🌊 AquaSafe</div>
+      <button class="menu-toggle" aria-label="Alternar Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Problema</a></li>
+        <li><a href="tecnologias.html">Tecnologias</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="publico.html">Público-Alvo</a></li>
+        <li><a href="beneficios.html">Benefícios</a></li>
+        <li><a href="uso.html">Uso Diário</a></li>
+        <li><a href="slideshow.html" class="active">SlideShow</a></li>
+        <li><a href="quiz.html" >Quiz</a></li>
+        <li><a href="form.html">Formulário</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <h1>Impacto das Enchentes e Tecnologia</h1>
+    <p>Explore como as enchentes afetam comunidades e como a tecnologia pode ajudar na prevenção.</p>
+
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="../assets/cidadealagada.webp" alt="Cidade alagada por enchente">
+        <div class="caption">As enchentes urbanas afetam milhares de pessoas todos os anos.</div>
+      </div>
+      <div class="slide fade">
+        <img src="../assets/sensores.webp" alt="Sensores monitorando níveis de água">
+        <div class="caption">Sensores inteligentes ajudam a prever e evitar tragédias.</div>
+      </div>
+      <div class="slide fade">
+        <img src="../assets/alerta2.jpg" alt="Governo enviando alertas">
+        <div class="caption">Aplicativos fornecem alertas rápidos para a população em risco.</div>
+      </div>
+
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </main>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
